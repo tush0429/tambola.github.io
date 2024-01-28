@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cell {
+    flex: 1;
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    width: 80px; /* Adjust the width of cells for landscape mode */
+  }
+  
+  
+  /* Responsive styles for landscape mode */
+  @media (min-width: 576px) and (orientation: landscape) {
+    .cell {
+      width: 50px; /* Further adjust the width of cells in landscape mode */
+    }
+  }
